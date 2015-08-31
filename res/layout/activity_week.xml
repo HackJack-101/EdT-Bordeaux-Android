@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/day_background"
+    tools:context=".WeekActivity" >
+
+
+    <TextView
+        android:id="@+id/textWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ExpandableListView
+        android:id="@+id/weekList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/previousWeekButton"
+        android:layout_alignLeft="@+id/textWeek"
+        android:layout_below="@+id/textWeek"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+         >
+
+    </ExpandableListView>
+
+    <View
+        android:id="@+id/ViewDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/weekList"
+        android:background="?android:attr/dividerVertical" />
+    
+    <Button
+        android:id="@+id/previousWeekButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/ButtonDividerWeek"
+        android:textColor="#FFFFFF"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/previousWeek" />
+    
+     <View
+        android:id="@+id/ButtonDividerWeek"
+        android:layout_width="2dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/weekList"
+        android:background="?android:attr/dividerVertical" />
+
+    <Button
+        android:id="@+id/nextWeekButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/ButtonDividerWeek"
+        android:textColor="#FFFFFF"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/nextWeek" />
+
+</RelativeLayout>

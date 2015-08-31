@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EdT Bordeaux</string>
+    <string name="day_view">Affichage quotidien</string>
+    <string name="week_view">Affichage hebdomadaire</string>
+    <string name="settings_view">Paramètres</string>
+        
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+    <string name="searchGroup">Chercher un groupe…</string>
+    
+    <string name="menu_favorite">Enregistrer ce groupe…</string>
+    <string name="action_favorite">Ajouter aux favoris</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_leave">Quitter</string>
+    <string name="action_googleCalendar">Synchroniser avec Google</string>
+    <string name="save_group">Définir comme groupe principal</string>
+    <string name="open_week">Affichage hebdomadaire</string>
+    
+    <string name="external_links">Accéder à l\'ENT</string>
+    <string name="ent">ENT Bordeaux 1</string>
+    <string name="td_groups">Groupes de TD</string>
+    <string name="webmail">Boite mail</string>
+    <string name="newsgroups">Newsgroups</string>
+    <string name="school_data">Portail de scolarité</string>
+    
+    <string name="previous">Précédent</string>
+    <string name="next">Suivant</string>
+    
+    <string name="previousWeek">Précédente</string>
+    <string name="nextWeek">Suivante</string>
+    
+    <string name="exclude_ue">Exclure l\'UE</string>
+    <string name="filter_ue">Filtrer les groupes</string>
+    <string name="confirm_filter">Ajouter le filtre</string>
+    
+    <string name="groupSettingsTitle">Réglage du groupe</string>
+  	<string name="groupSettings">Groupe de TD principal :</string>
+    <string name="groupSettingsHelp">Pour configurer votre groupe de TD, il vous suffit de faire un appui long sur le groupe en question dans la liste de TD.</string>
+    <string name="filterSettingsTitle">Filtres</string>
+    <string name="filterSettingsHelp">Entrez ci-dessous les codes des UE que vous ne voulez pas afficher. Séparez les codes UE par des vigules et respectez la casse.</string>
+    <string name="advancedFilterSettingsTitle">Filtres avancés</string>
+    <string name="advancedFilterSettingsHelpNext">Le code d\'UE et le groupe doivent être séparés par deux points \":\" et les ensembles \"UE:Groupe\" séparés par des virgules. Repectez la casse.</string>
+    <string name="saveFilters">Enregistrer les filtres</string>
+    <string name="advancedFilterSettingsNotaBene">N.B. : Le filtrage n\'est actif que sur les pages qui concernent votre groupe de TD.</string>
+	<string name="advancedFilterSettingsHelp">Entrez ci-dessous les codes des UE suivis de l\'intitulé de votre groupe pour n\'afficher que les TD et TP du groupe indiqué.</string>
+	<string name="cacheSettingsTitle">Cache</string>
+	<string name="cacheSettings">Vous pouvez modifier la durée de la mise en cache des emplois du temps consultés.\nLa durée conseillée est d\'une heure (elle est configurée par défaut).</string>
+	<string name="cacheHours">heure(s)</string>
+	<string name="saveCache">Valider</string>
+	<string name="aboutTitle">À propos</string>
+	<string name="about">Application développée par J_ck3113. Pour toutes vos remarques et requêtes, n\'hésitez pas à me contacter via l\'adresse email renseignée sur la fiche Google Play.</string>
+	
+    <string name="open_website">Ouvrir dans le navigateur</string>
+</resources>

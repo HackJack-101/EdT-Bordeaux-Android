@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dayEdTLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5sp"
+    android:background="@drawable/class_background" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/subjectTitle"
+        android:textColor="@color/edtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="Cours : "
+        android:layout_below="@id/title" />
+    
+    <TextView
+        android:id="@+id/subject"
+        android:textColor="@color/edtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@+id/subjectTitle" />
+    
+    <TextView
+        android:id="@+id/staffTitle"
+        android:textColor="@color/edtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="Avec : "
+        android:layout_below="@id/subject" />
+    
+    <TextView
+        android:id="@+id/staff"
+        android:textColor="@color/edtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_below="@id/subject"
+        android:layout_toRightOf="@+id/staffTitle" />
+    
+    <TextView
+        android:id="@+id/roomTitle"
+        android:textColor="@color/edtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="Salle : "
+        android:layout_below="@id/staff" />
+    
+    <TextView
+        android:id="@+id/room"
+        android:textColor="@color/edtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_below="@id/staff"
+        android:layout_toRightOf="@+id/roomTitle" />
+    
+    <TextView
+        android:id="@+id/groupTitle"
+        android:textColor="@color/edtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="Groupe(s) : "
+        android:layout_below="@id/room" />
+    
+    <TextView
+        android:id="@+id/group"
+        android:textColor="@color/edtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_below="@id/room"
+        android:layout_toRightOf="@+id/groupTitle" />
+    
+    <TextView
+        android:id="@+id/annotationTitle"
+        android:textColor="@color/edtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="Notes : "
+        android:layout_below="@id/group" />
+    
+    <TextView
+        android:id="@+id/annotation"
+        android:textColor="@color/edtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_below="@id/group"
+        android:layout_toRightOf="@+id/annotationTitle" />
+
+</RelativeLayout>

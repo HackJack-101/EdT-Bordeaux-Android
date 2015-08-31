@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textColor="#444444" >
+
+        <TextView
+            android:id="@+id/groupSettingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip"
+            android:text="@string/groupSettingsTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:textColor="#00BFFF" />
+
+        <View
+            android:id="@+id/groupSettingsHR"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_below="@+id/groupSettingsTitle"
+            android:background="@drawable/hr" />
+
+        <TextView
+            android:id="@+id/groupSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/groupSettingsHR"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="@string/groupSettings" />
+
+        <TextView
+            android:id="@+id/groupSettingsContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupSettingsHR"
+            android:layout_toRightOf="@+id/groupSettings"
+            android:layout_toEndOf="@+id/groupSettings"
+            android:paddingRight="5dip"
+            android:paddingLeft="5dip" />
+
+        <TextView
+            android:id="@+id/groupSettingsHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/groupSettings"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="@string/groupSettingsHelp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/filterSettingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/groupSettingsHelp"
+            android:paddingTop="15dip"
+            android:paddingRight="0dip"
+            android:paddingEnd="0dip"
+            android:paddingLeft="15dip"
+            android:paddingStart="15dip"
+            android:text="@string/filterSettingsTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:textColor="#00BFFF" />
+        
+        <View
+            android:id="@+id/filterSettingsHR"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_below="@+id/filterSettingsTitle"
+            android:background="@drawable/hr" />
+
+        <TextView
+            android:id="@+id/filterSettingsHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/filterSettingsHR"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="@string/filterSettingsHelp"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/filters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/filterSettingsHelp"
+            android:ems="10"
+            android:inputType="textMultiLine" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/advancedFilterSettingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/filters"
+            android:paddingTop="15dip"
+            android:paddingLeft="15dip"
+            android:paddingStart="15dip"
+            android:paddingRight="0dip"
+            android:paddingEnd="0dip"
+            android:text="@string/advancedFilterSettingsTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:textColor="#00BFFF" />
+          
+        <View
+            android:id="@+id/advancedFilterSettingsHR"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_below="@+id/advancedFilterSettingsTitle"
+            android:background="@drawable/hr" />
+
+        <TextView
+            android:id="@+id/advancedFilterSettingsHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/advancedFilterSettingsHR"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="@string/advancedFilterSettingsHelp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/advancedFilterSettingsHelpNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/advancedFilterSettingsHelp"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="@string/advancedFilterSettingsHelpNext"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/advancedFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/advancedFilterSettingsHelpNext"
+            android:ems="10"
+            android:inputType="textMultiLine" >
+
+        </EditText>
+
+        <Button
+            android:id="@+id/saveFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/advancedFilters"
+            android:text="@string/saveFilters" />
+
+        <TextView
+            android:id="@+id/advancedFilterSettingsNotaBene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/saveFilters"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="@string/advancedFilterSettingsNotaBene"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/cacheSettingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/advancedFilterSettingsNotaBene"
+            android:paddingTop="15dip"
+            android:paddingLeft="15dip"
+            android:paddingStart="15dip"
+            android:paddingRight="0dip"
+            android:paddingEnd="0dip"
+            android:text="@string/cacheSettingsTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:textColor="#00BFFF" />
+          
+        <View
+            android:id="@+id/cacheSettingsHR"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_below="@+id/cacheSettingsTitle"
+            android:background="@drawable/hr" />
+        
+        <TextView
+            android:id="@+id/cacheSettingsHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/cacheSettingsHR"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="@string/cacheSettings"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/cacheSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/cacheHours"
+            android:layout_toStartOf="@+id/cacheHours"
+            android:layout_alignBaseline="@+id/saveCache"
+            android:layout_alignBottom="@+id/saveCache"
+            android:ems="3"
+            android:gravity="center"
+    		android:ellipsize="start" 
+            android:inputType="numberSigned" >
+            
+        </EditText>
+        
+        <TextView
+            android:id="@+id/cacheHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cacheSettingsHelp"
+            android:layout_alignBaseline="@+id/saveCache"
+            android:layout_alignBottom="@+id/saveCache"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="@string/cacheHours" />
+
+        <Button
+            android:id="@+id/saveCache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cacheSettingsHelp"
+            android:layout_toRightOf="@+id/cacheHours"
+            android:layout_toEndOf="@+id/cacheHours"
+            android:text="@string/saveCache" />        
+        
+        <TextView
+            android:id="@+id/aboutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/saveCache"
+            android:paddingTop="15dip"
+            android:paddingLeft="15dip"
+            android:paddingStart="15dip"
+            android:paddingRight="0dip"
+            android:paddingEnd="0dip"
+            android:text="@string/aboutTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="18sp"
+            android:textColor="#00BFFF" />
+        
+        <View
+            android:id="@+id/aboutHR"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_below="@+id/aboutTitle"
+            android:background="@drawable/hr" />
+        
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/aboutHR"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingBottom="15dip"
+            android:text="@string/about"
+            android:textSize="12sp" />
+        
+    </RelativeLayout>
+
+</ScrollView>

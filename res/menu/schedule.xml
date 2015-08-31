@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_favorite"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_menu_important"
+        android:title="@string/menu_favorite"/>
+    
+    <item
+        android:id="@+id/action_googleCalendar"
+        android:showAsAction="never"
+        android:title="@string/action_googleCalendar"/>
+    
+    <item
+        android:id="@+id/action_leave"
+        android:showAsAction="never"
+        android:title="@string/action_leave"/>
+
+</menu>

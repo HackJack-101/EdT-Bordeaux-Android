@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="always"
+        android:title="@string/searchGroup"/>
+    <item
+        android:id="@+id/action_leave"
+        android:title="@string/action_leave"/>
+
+</menu>

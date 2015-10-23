@@ -75,6 +75,8 @@ public class WeekListAdapter extends BaseExpandableListAdapter
 			convertView.setBackgroundResource(R.drawable.bea8d3);
 		else if(style.equalsIgnoreCase("bed3d3"))
 			convertView.setBackgroundResource(R.drawable.bed3d3);
+		else if(style.equalsIgnoreCase("d3a8a8"))
+			convertView.setBackgroundResource(R.drawable.d3a8a8);
 		else if(style.equalsIgnoreCase("d3a8be"))
 			convertView.setBackgroundResource(R.drawable.d3a8be);
 		else if(style.equalsIgnoreCase("d3a8ff"))

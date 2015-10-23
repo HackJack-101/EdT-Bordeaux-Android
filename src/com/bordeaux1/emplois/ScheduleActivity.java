@@ -96,7 +96,7 @@ public class ScheduleActivity extends FragmentActivity implements ActionBar.TabL
 				String[] split = code.split(" ");
 				String name = split[0];
 				String group = split[1];
-				String url = "https://www.google.com/calendar/render?cid=http://www.hackjack.info/et/" + name + "_" + group + "/gcal";
+				String url = "http://www.hackjack.info/et/" + name + "_" + group + "/config?gcal=true";
 				Uri uriUrl = Uri.parse(url);
 				Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
 				startActivity(launchBrowser);

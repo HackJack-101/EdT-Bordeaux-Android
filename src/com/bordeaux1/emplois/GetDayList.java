@@ -316,6 +316,8 @@ class GetDayList extends AsyncTask<String, String, String>
 				holder.layout.setBackgroundResource(R.drawable.bea8d3);
 			else if (style.equalsIgnoreCase("bed3d3"))
 				holder.layout.setBackgroundResource(R.drawable.bed3d3);
+			else if (style.equalsIgnoreCase("d3a8a8"))
+				holder.layout.setBackgroundResource(R.drawable.d3a8a8);
 			else if (style.equalsIgnoreCase("d3a8be"))
 				holder.layout.setBackgroundResource(R.drawable.d3a8be);
 			else if (style.equalsIgnoreCase("d3a8ff"))

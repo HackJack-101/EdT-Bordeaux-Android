@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bordeaux1.emplois"
     android:installLocation="auto"
-    android:versionCode="39"
-    android:versionName="2.14" >
+    android:versionCode="42"
+    android:versionName="2.17" >
 
     <uses-sdk
         android:minSdkVersion="11"

@@ -28,8 +28,7 @@ import android.util.Log;
 public class EdTTools
 {
 	private static String	url		= "http://hackjack.info/et/json.php";
-	private static int		delay	= 1000 * 3600 * 24 * 3;				// 3
-																			// days
+																		
 	private JSONParser		jParser;
 	private Context			context;
 
@@ -42,7 +41,7 @@ public class EdTTools
 	public JSONObject getList()
 	{
 		String fname = "edt_list.json";
-		int cacheTime = 1000 * 3600 * 24 * 30; // A month
+		int cacheTime = 1000 * 3600 * Integer.parseInt(CacheManager.getPreferences(context, "cacheDuration", "1"));
 		List<NameValuePair> params = new ArrayList<NameValuePair>();
 		if (isNetworkAvailable())
 		{
@@ -116,7 +115,6 @@ public class EdTTools
 			if (CacheManager.fileExists(context, fname))
 			{
 				File edtList = context.getFileStreamPath(fname);
-				if (day.getTime() < (System.currentTimeMillis() - EdTTools.delay))
 					if ((edtList.lastModified() + cacheTime) < System.currentTimeMillis())
 					{
 						JSONArray request = jParser.makeHttpRequestArray(url, "GET", params);
